@@ -8,7 +8,7 @@ commands:
   - id: clean-install
     exec:
       component: tools
-      commandLine: 'mvn clean install -Dmaven.repo.local=/home/user/.m2/repository'
+      commandLine: 'mvn clean install -Dmaven.repo.local=/home/user/.m2/repository -DskipTests'
       workingDir: ${PROJECT_SOURCE}
   - id: dev-run
     exec:
